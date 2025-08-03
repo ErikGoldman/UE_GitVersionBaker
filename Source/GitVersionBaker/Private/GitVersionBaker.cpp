@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "UEGitVersionBaker.h"
+#include "GitVersionBaker.h"
 
 #define LOCTEXT_NAMESPACE "FUEGitVersionBakerModule"
 

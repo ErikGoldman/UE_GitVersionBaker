@@ -40,7 +40,7 @@ public class GitVersionBaker : ModuleRules
             return;
         }
 
-        string versionHeaderPath = Path.Combine(ModuleDirectory, "Private", "StoredGitVersion.h");
+        string versionHeaderPath = Path.Combine(ModuleDirectory, "Private", "BakedGitVersion.h");
 
         System.Console.WriteLine("Generating new version file for packaged build (GameVersion plugin)...");
 
@@ -53,7 +53,7 @@ public class GitVersionBaker : ModuleRules
             // Get the short git hash. We assume the project root is a few levels up from the module.
             // This might need adjustment depending on your exact project structure.
             string projectRoot = Path.GetFullPath(Path.Combine(ModuleDirectory, "..", "..", "..", ".."));
-            gitHash = RunCommand("git", $"-C \"{projectRoot}\" rev-parse --short HEAD");
+            gitHash = RunCommand("git", $"-C \"{projectRoot}\" rev-parse HEAD");
         }
         catch (Exception e)
         {

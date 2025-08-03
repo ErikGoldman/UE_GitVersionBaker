@@ -1,4 +1,6 @@
-﻿# VS/idea
+﻿Source/GitVersionBaker/Private/BakedGitVersion.h
+
+# VS/idea
 .vs/
 .vscode/
 .vsconfig
