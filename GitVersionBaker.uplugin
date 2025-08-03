@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "GitVersionBaker",
+	"Description": "Bakes the Git hash and some other metadata as a version number",
+	"Category": "Other",
+	"CreatedBy": "ErikGoldman",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "GitVersionBaker",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
