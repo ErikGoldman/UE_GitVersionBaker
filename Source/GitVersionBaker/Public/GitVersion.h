@@ -14,6 +14,7 @@ class GITVERSIONBAKER_API UGitVersion : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
 
+public:
 	/** Gets the Git commit hash for this build. */
 	UFUNCTION(BlueprintPure, Category = "Game Version")
 	static FString GetLongGitHash();
